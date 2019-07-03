@@ -50,6 +50,7 @@
       </div>
 
 <!--Side Nav-->
+
       <ul class="sidenav" id="mobile-nav">
           <li>
             <a href="#home">Home</a>
@@ -68,7 +69,8 @@
           </li>
         </ul>
 
-<!--Slider-->
+<!--Section: Slider-->
+
   <section class="slider">
     <ul class="slides">
       <li>
@@ -80,13 +82,13 @@
       <li>
         <img src="img/computer_1.jpg"> 
         <div class="caption left-align">
-          <h5 class="light grey-text text-lighten-3">TuxGeo+ Visualising Information for Illuminating Insights.</h5>
+          <h5 class="light grey-text text-lighten-3">TuxGeo+Ⓡ Visualising Information for Illuminating Insights.</h5>
         </div>
       </li>
       <li>
         <img src="img/maps.jpg"> 
         <div class="caption left-align">
-          <h5 class="light black-text text-lighten-3">TuxGeo+ Platform The Perfect Launchpad for Your Data.</h5>
+          <h5 class="light black-text text-lighten-3">TuxGeo+Ⓡ Platform The Perfect Launchpad for Your Data.</h5>
         </div>
       </li>
       <li>
@@ -98,55 +100,48 @@
     </ul>
   </section>
 
-  <!--Section About Us-->
+  <!--Section: About Us-->
 
-  <section id="about" class="section section-about black darken-1 white-text center scrollspy">
+  <section id="about" class="section section-about black darken-1 center white-text scrollspy">
     <div class="container">
       <div class="row">
-        <h3>About Us</h3>
-        <div class="col m6">
-          
-        </div>
-
-        <div class="input-field">
-          <input type="text" class="white grey-text autocomplete" 
-          id="autocomplete-input"
-          placeholder="Jonker Street, Klebang, A Famosa, The Shore, Encore, etc...">
+        <h3 class="center light white-text">About Us</h3>
+          <h5>TuxGeo+Ⓡ Our Pride. Your Joy.</h5>
+          <p>
+              Tuxuri helps our customers map sense™ the tremendous amount 
+              of location data within their organization. We deliver Geo Web 
+              experiences for our customers based on the TuxGeo+ platform. 
+              TuxGeo+ is a powerful, scalable, and secure platform designed 
+              to build and publish maps by combining your private data with 
+              a web mapping service or GIS map content to generate 
+              compelling and comprehensive visualisations. TuxGeo+ also 
+              helps clients to make sense of their data to unleash meaningful 
+              insights and reveal strategic perspectives on their business and 
+              operations.
+          </p>
         </div>
       </div>
     </div>
   </section>
 
-  <!--Section: Icon-->
-  <section class="section section-icons white lighten-4 center">
-    <div class="container">
-      <div class="row">
-        <div class="col s12 m4">
-          <div class="card-panel">
-            <i class="material-icons large black-text">room</i>
-            <h4>Destination</h4>
-            <p>Lorem ipsum dolor sit amet.</p>
-          </div>
-        </div>
-        <div class="col s12 m4">
-          <div class="card-panel">
-            <i class="material-icons large black-text">restaurant</i>
-            <h4>Restaurant</h4>
-            <p>Lorem ipsum dolor sit amet.</p>
-          </div>
-        </div>
-        <div class="col s12 m4">
-          <div class="card-panel">
-            <i class="material-icons large black-text">store_mall_directory</i>
-            <h4>Shop</h4>
-            <p>Lorem ipsum dolor sit amet.</p>
-          </div>
-        </div>
+  <!--Section: Our Products-->
+
+  <div class="parallax-container">
+    <div class="parallax"><img src="img/maps.jpg"></div>
+
+    <div class="container products">
+      <div class="col m6">
+        <h3 class="center black-text">Our Products</h3>
+        <p class="center black-text">TuxGeo+Ⓡ Maps for Enterprise</p>
+        <p class="center black-text">TuxGeo+Ⓡ Maps Address</p>
+        <p class="center black-text">TuxGeo+Ⓡ Maps Vision</p>
+        <p class="center black-text">TuxGeo+Ⓡ Maps Transit</p>
       </div>
     </div>
-  </section>
+  </div>
 
-  <!--Section Popular Places-->
+  <!--Section: Popular Places-->
+
   <section id="popular" class="section section-popular scrollspy">
     <div class="container">
       <div class="row">
@@ -188,7 +183,7 @@
     </div>
   </section>
 
-  <!--Section Follow-->
+  <!--Section: Follow-->
 
   <section class="section section-follow black-darken-2 black-text center">
     <div class="container">
@@ -213,7 +208,7 @@
     </div>
   </section>
 
-  <!--Section Gallery-->
+  <!--Section: Gallery-->
   <section id="gallery" class="section section-gallery scrollspy">
     <div class="container">
       <h4 class="center">
@@ -313,12 +308,15 @@
     <!--JavaScript at end of body for optimized loading-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
-    <script>
-      const sideNav = document.querySelector('.sidenav');
-      M.Sidenav.init(sideNav, {});
-    </script>
 
     <script>
+
+      // Sidenav
+
+      const sideNav = document.querySelector('.sidenav');
+      M.Sidenav.init(sideNav, {});
+
+      // Slider
 
       const slider = document.querySelector('.slider');
       M.Slider.init(slider, {
@@ -327,6 +325,11 @@
         transition: 500,
         interval: 6000
       })
+
+      // Parallax
+
+      const parallax = document.querySelectorAll('.parallax');
+      M.Parallax.init(parallax, {});
 
       // Autocomplete
 
