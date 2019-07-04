@@ -4,7 +4,7 @@
 }
 
 .parallax-container {
-    height: 240px;
+    height: 20%;
 
 }
 
@@ -13,6 +13,7 @@
     opacity: 0.5 !important;
 }
 
-.products img {
-    max-width: 150px;
+.clients img {
+    max-width: 90px;
+    filter: drop-shadow(1px 1px 1px rgba(0,0,0,0.5))
 }
