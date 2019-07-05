@@ -14,6 +14,49 @@
 }
 
 .clients img {
-    max-width: 90px;
+    max-width: 100px;
     filter: drop-shadow(1px 1px 1px rgba(0,0,0,0.5))
+}
+
+.content {
+    background: black;
+    padding: 30px;
+    color: black;
+    max-width: 50%;
+    flex: none;
+    margin-top: 8em;
+}
+
+.container_content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content p {
+    line-height: 160%;
+    letter-spacing: 1px;
+    padding: 0px 0px 20px 0px;
+    text-align: justify;
+}
+
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px/1;
+    font-size: inherit;
+    text-rendering: auto;
+    color: white;
+}
+
+.container_content .content a {
+    color: white;
+}
+
+.button_white_reversed {
+    border: 1px solid white;
+    background: white;
+    color: black;
+    padding: 15px;
+    letter-spacing: 1px;
+    cursor: pointer;
 }
